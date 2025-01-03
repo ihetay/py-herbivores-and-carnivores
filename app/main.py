@@ -38,4 +38,4 @@ class Carnivore(Animal):
     def bite(herbivore: "Herbivore") -> None:
         if isinstance(herbivore, Herbivore) and not herbivore.hidden:
             herbivore.health -= 50
-        Animal.remove_animal(herbivore)
+        herbivore.remove_animal()
